@@ -1,0 +1,21 @@
+
+
+
+
+
+
+mixin services_entry( args )
+	.col-xs-10.col-sm-4.col-md-3.col-lg-3
+		a.services__entry.entry( href="#" )
+			.thumbnail( style="background-color: " + args.color + ";" )
+				img.lazy( src="#", data-src=args.thumbnail, alt=args.title )
+			h3.title #{args.title}
+			p.excerpt Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum error, adipisci hic iste soluta perferendis omnis eius. 
+
+
+
+
+section.section.services#services: .container: .row.center-xs.middle-xs
+	+services_entry( { color: '#84d1fd', title: 'Global Student', thumbnail: src.img+'services/icon-01.png' } )
+	+services_entry( { color: '#614cfb', title: 'Success Rate', thumbnail: src.img+'services/icon-02.png' } )
+	+services_entry( { color: '#ecaf53', title: 'Education Services', thumbnail: src.img+'services/icon-03.png' } )

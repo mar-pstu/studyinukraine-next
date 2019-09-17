@@ -1,0 +1,87 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.feedback {
+
+	
+	border-radius: 8px;
+	padding: 3em;
+	position: relative;
+
+	&:after,
+	&:before {
+		content: '';
+		display: block;
+		border-radius: 8px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		z-index: -1;
+	}
+
+	&:after {
+		background-color: $brand-success;
+		top: 0px;
+		bottom: 0px;
+	}
+
+	&:before {
+		background-color: rgba( 0, 0, 0, 0.5 );
+		top: -10px;
+		bottom: 10px;
+	}
+
+
+	.form {
+		margin: 1em auto;
+		display: flex;
+		flex-direction: row;
+		align-items: stretch;
+		justify-content: center;
+	}
+
+	.title {
+		text-align: center;
+	}
+
+	.separator {
+		background-color: #fff;
+	}
+
+	.form input {
+		@extend %text-control;
+		border-radius: 1em 0 0 1em;
+		margin: 0;
+	}
+
+	.form button {
+		@extend %icon-send;
+		display: block;
+		text-align: center;
+		border-radius: 0 1em 1em 0;
+		border: none;
+		background-color: $titles-color;
+		min-width: 3em;
+		cursor: pointer;
+		background-size: 1em 1em;
+		background-position: center center;
+		background-repeat: no-repeat;
+		cursor: pointer;
+		transition: background-color 200ms;
+		&:hover {
+			background-color: lighten( $titles-color, 15% );
+		}
+	}
+
+}

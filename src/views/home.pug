@@ -1,0 +1,17 @@
+extend layout/_index
+
+
+block variables
+	- page.type = 'front-page';
+	- page.title = 'Главная';
+
+
+block main
+	include blocks/_jumbotron
+	include blocks/_aboutus
+	include blocks/_services
+	//- include blocks/_action
+	include blocks/_sectors
+	//- include blocks/_panoramas
+	//- include blocks/_mrpl
+	//- include blocks/_feedback

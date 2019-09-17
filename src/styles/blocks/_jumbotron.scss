@@ -1,0 +1,64 @@
+//
+//
+//	Главная страница
+//  первый экран
+//
+//
+
+
+
+
+.jumbotron {
+
+	background-color: $brand-primary;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+
+	.page {
+		padding: 5em 0;
+	}
+
+	.title {
+		color: #fff;
+		margin: 0;
+	}
+
+	.excerpt {
+		font-weight: bold;
+		margin: 2em 0;
+		color: #fff;
+	}
+
+	.basement {
+
+		background-color: $body-color;
+		position: relative;
+
+		&:before {
+			content: '';
+			display: block;
+			background-color: $brand-primary;
+			height: 100px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 0;
+		}
+
+	}
+
+	.reviews {
+		margin-top: 50px;
+		@include min-width( $screen-md ) { margin-top: 100px; }
+		.entry { margin-bottom: 0; }
+		.slick-dots { margin-top: 0; }
+	}
+
+	.feedback {
+		position: relative;
+		z-index: 1;
+	}
+
+}

@@ -1,0 +1,35 @@
+
+
+
+
+
+
+
+
+
+
+
+
+.btn {
+
+	@extend %button;
+
+	&-primary {
+		background-color: $brand-primary;
+		color: #fff;
+	}
+
+
+	&-success {
+		background-color: $brand-success;
+		color: #fff;
+	}
+
+
+	&-warning {
+		background-color: $brand-warning;
+		color: #fff;
+	}
+
+
+}

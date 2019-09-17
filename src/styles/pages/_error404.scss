@@ -1,0 +1,68 @@
+
+
+
+
+
+
+
+
+
+
+
+
+.error404 {
+
+
+	.wrap {
+		margin: 3em auto;
+		background-color: #eee;
+		border-radius: 2em;
+		overflow: hidden;
+		box-shadow: 1em 1em 2em rgba( 0, 0, 0, 0.2 );
+		text-align: center;
+		padding: 1.5em 1em;
+		img.logo {
+			max-width: 250px;
+		}
+	}
+
+	h1.title {
+		margin: 0;
+	}
+
+	.shortcuts {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+
+	.shortcuts li {
+		display: inline-block;
+		margin: 0 0.5em;
+	}
+
+	.shortcuts a {
+		color: lighten( $text-color, 20% );
+		font-size: 75%;
+		transition: color 200ms;
+		&:hover {
+			text-decoration: none;
+			color: $text-color;
+		}
+	}
+
+	.title {
+		font-size: 2em;
+	}
+
+	.home-link {
+		margin-top: 1em;
+	}
+
+	.home-link:after {
+		@extend %button-icon;
+		@extend %icon-home;
+	}
+
+
+}

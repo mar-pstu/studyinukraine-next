@@ -1,0 +1,266 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2019-09-17 11:45+0300\n"
+"PO-Revision-Date: 2019-09-17 11:49+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr__;esc_attr_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+"X-Poedit-SearchPathExcluded-1: src\n"
+
+#: 404.php:8 customizer/404.php:25
+msgid "Страница не найдена"
+msgstr "Page not found"
+
+#: 404.php:9 customizer/404.php:43
+msgid ""
+"К сожалению страница не найдена. Проверьте правильность адреса или нажмите "
+"на любую ссылку выше."
+msgstr ""
+"Sorry, the page was not found. Check the address or click on any link above."
+
+#: 404.php:39
+msgid "Вернуться на главную"
+msgstr "Go back to the main page"
+
+#: customizer/404.php:13
+msgid "404"
+msgstr "404"
+
+#: customizer/404.php:15
+msgid "Настройки страницы 404"
+msgstr "Page Settings 404"
+
+#: customizer/404.php:34 customizer/jumbotron.php:70 customizer/sectors.php:50
+msgid "Заголовок"
+msgstr "Headline"
+
+#: customizer/404.php:52
+msgid "Подзаголовок"
+msgstr "Subtitle"
+
+#: customizer/404.php:71
+msgid "Лого"
+msgstr "Logo"
+
+#: customizer/aboutus.php:13
+msgid "О нас"
+msgstr "About us"
+
+#: customizer/aboutus.php:15 customizer/jumbotron.php:15
+#: customizer/sectors.php:15 customizer/services.php:15
+msgid "Секция главной страницы"
+msgstr "Homepage Section"
+
+#: customizer/aboutus.php:33 customizer/jumbotron.php:34
+#: customizer/sectors.php:33 customizer/services.php:33
+msgid "Использовать секцию"
+msgstr "Use section"
+
+#: customizer/aboutus.php:52 customizer/jumbotron.php:129
+msgid "Превью"
+msgstr "Preview"
+
+#: customizer/aboutus.php:69 customizer/jumbotron.php:51
+#: customizer/sectors.php:67 customizer/services.php:50
+msgid "Выбор страницы"
+msgstr "Page Selection"
+
+#: customizer/aboutus.php:76 customizer/jumbotron.php:100 index.php:28
+#: parts/home/aboutus.php:27 parts/home/jumbotron.php:8
+msgid "Подробней"
+msgstr "More details"
+
+#: customizer/aboutus.php:84 customizer/jumbotron.php:109
+msgid "Текст кнопки"
+msgstr "Button text"
+
+#: customizer/aboutus.php:99
+msgid "Обратный порядок"
+msgstr "Reverse order"
+
+#: customizer/contacts.php:13
+msgid "Контакты"
+msgstr "Contacts"
+
+#: customizer/contacts.php:15
+msgid "Список контактов"
+msgstr "Contact list"
+
+#: customizer/contacts.php:22
+msgid "Viber"
+msgstr "Viber"
+
+#: customizer/contacts.php:23
+msgid "WhatsApp"
+msgstr "WhatsApp"
+
+#: customizer/contacts.php:24
+msgid "Skype"
+msgstr "Skype"
+
+#: customizer/contacts.php:25
+msgid "Facebook"
+msgstr "Facebook"
+
+#: customizer/contacts.php:26
+msgid "Twitter"
+msgstr "Twitter"
+
+#: customizer/contacts.php:27
+msgid "Email"
+msgstr "Email"
+
+#: customizer/jumbotron.php:13
+msgid "Первый экран"
+msgstr "First screen"
+
+#: customizer/jumbotron.php:89
+msgid "Описание"
+msgstr "Description"
+
+#: customizer/jumbotron.php:141 parts/home/jumbotron.php:48
+msgid "Подать заявку на поступление"
+msgstr "Apply for admission"
+
+#: customizer/jumbotron.php:150
+msgid "Заголовок формы"
+msgstr "Form header"
+
+#: customizer/jumbotron.php:170
+msgid "Шорткод формы"
+msgstr "Shortcode Forms"
+
+#: customizer/jumbotron.php:190
+msgid "Email админа (если используется форма темы)"
+msgstr "Admin Email (if using the subject form)"
+
+#: customizer/jumbotron.php:209
+msgid "Публиковать отзывы"
+msgstr "Post reviews"
+
+#: customizer/reviews.php:13
+msgid "Отзывы"
+msgstr "Reviews"
+
+#: customizer/reviews.php:15
+msgid "Блок отзывов клиентов"
+msgstr "Customer Feedback Block"
+
+#: customizer/reviews.php:33
+msgid "Автор"
+msgstr "Author"
+
+#: customizer/reviews.php:48
+msgid "Отзыв"
+msgstr "Review"
+
+#: customizer/sectors.php:13 customizer/sectors.php:42
+#: parts/home/sectors.php:26
+msgid "Области знаний"
+msgstr "Areas of knowledge"
+
+#: customizer/services.php:13
+msgid "Услуги"
+msgstr "Services"
+
+#: functions.php:46
+msgid "Настройки темы \"StudyInUkraine\""
+msgstr "StudyInUkraine Theme Settings"
+
+#: functions.php:88
+msgid "Главное меню"
+msgstr "Main menu"
+
+#: functions.php:89
+msgid "Меню страницы 404"
+msgstr "Page Menu 404"
+
+#: functions.php:101
+msgid "Правая колонка"
+msgstr "Right column"
+
+#: functions.php:111
+msgid "Сайдбар меню навигации"
+msgstr "Sidebar navigation menu"
+
+#: header.php:45
+msgid "Открыть меню"
+msgstr "Open menu"
+
+#: includes/feedback-form-ajax.php:54 includes/feedback-form-ajax.php:67
+msgid "Неверный email"
+msgstr "Invalid Email"
+
+#: includes/feedback-form-ajax.php:58
+msgid "Заявка отправлена"
+msgstr "Application sent"
+
+#: includes/feedback-form-ajax.php:60 views/feedback-form.php:19
+msgid "Попробуйте позже или обратитесь к администратору."
+msgstr "Try again later or contact your administrator."
+
+#: includes/feedback-form-ajax.php:63
+msgid "Вы забанены, обратитесь к администратору"
+msgstr "You are banned, contact your administrator"
+
+#: includes/feedback-form-ajax.php:91
+msgid "Сообщение с сайта"
+msgstr "Message from the site"
+
+#: includes/metabox-bgi.php:42
+msgid "Фоновое изображение"
+msgstr "Background image"
+
+#: includes/template-functions.php:94
+msgid "Смотреть предыдущий пост"
+msgstr "View previous post"
+
+#: includes/template-functions.php:98
+msgid "Смотреть следующий пост"
+msgstr "See next post"
+
+#: includes/template-functions.php:161
+msgid "Главная"
+msgstr "Home"
+
+#: includes/template-functions.php:174
+msgid "Домашняя страница"
+msgstr "Homepage"
+
+#: searchform.php:4
+msgid "Найти"
+msgstr "To find"
+
+#: views/feedback-form-message.php:4
+msgid "IP пользователя"
+msgstr "User IP"
+
+#: views/feedback-form-message.php:8
+msgid "Email пользователя"
+msgstr "User Email"
+
+#: views/feedback-form.php:3
+msgid "Ваш email"
+msgstr "Your email"
+
+#: views/feedback-form.php:4
+msgid "Отправить"
+msgstr "Submit"
+
+#: views/metabox-bgi.php:5
+msgid "Удалить"
+msgstr "Delete"
+
+#: views/metabox-bgi.php:8
+msgid "Установить"
+msgstr "Install"

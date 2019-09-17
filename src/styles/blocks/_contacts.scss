@@ -1,0 +1,73 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contacts {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+	li {
+		display: inline-block;
+		margin: 0.5em;
+		vertical-align: middle;
+	}
+	a {
+		@extend %background-icon;
+		display: block;
+		position: relative;
+		width: 3em;
+		height: 3em;
+	}
+	a:hover .value {
+		transform: translate( -50%, 0% );
+		opacity: 1;
+	}
+	.value {
+		font-size: 10px;
+		display: block;
+		opacity: 0;
+		background-color: $titles-color;
+		color: #fff;
+		padding: 3px;
+		border-radius: 3px;
+		position: absolute;
+		bottom: 100%;
+		left: 50%;
+		margin-bottom: 1em;
+		transform: translate( -50%, 15% );
+		transition: opacity 200ms, transform 200ms;
+		z-index: 100;
+		&:before {
+			content: '';
+			display: block;
+			width: 0;
+			height: 0;
+			border-bottom: 5px solid transparent;
+			border-right: 5px solid transparent;
+			border-left: 5px solid transparent;
+			border-top: 5px solid $titles-color;
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			transform: translate( -50%, 0% );
+		}
+	}
+	.viber a { @extend %icon-viber; }
+	.whatsapp a { @extend %icon-whatsapp; }
+	.skype a { @extend %icon-skype; }
+	.facebook a { @extend %icon-facebook; }
+	.twitter a { @extend %icon-twitter; }
+	.email a { @extend %icon-email; }
+}

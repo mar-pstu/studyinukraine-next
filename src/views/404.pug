@@ -1,0 +1,20 @@
+extend layout/_index
+
+
+block variables
+	- page.type = 'error404';
+	- page.title = 'Ошибка 404';
+
+
+block main
+	.container: .row.center-xs.middle-xs: .col-xs-12.col-sm-9.col-md-8.col-lg-6: .error404__wrap.wrap
+		img.logo.lazy.center-block( src="#", data-src=src.img+'404.svg', alt=page.title )
+		h1.title #{page.title}
+		ul.shortcuts
+			li: a( href="#" ) Категория 1
+			li: a( href="#" ) Категория 2
+			li: a( href="#" ) Категория 3
+			li: a( href="#" ) Категория 4
+			li: a( href="#" ) Категория 5
+		p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae non magnam expedita possimus facilis, placeat, perferendis quam incidunt sapiente id quibusdam, voluptatem est aliquid repellat consectetur, dolorum quas tempora. Ducimus!
+		.text-center: a.btn.btn-success.home-link( href="#" ) Вернуться на главную

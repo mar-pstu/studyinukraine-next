@@ -1,0 +1,45 @@
+@import "helpers/variables";
+@import "helpers/functions";
+@import "helpers/flex";
+@import "helpers/mixins";
+@import "helpers/extends.button";
+@import "helpers/extends.icons";
+@import "helpers/extends";
+
+
+@import "base/normalize";
+@import "base/type";
+@import "base/wrapper";
+@import "base/flexboxgrid";
+
+
+@import "blocks/burger";
+@import "blocks/bloginfo";
+@import "blocks/pager";
+@import "blocks/pageheader";
+@import "blocks/breadcrumbs";
+@import "blocks/pagination";
+@import "blocks/contacts";
+@import "blocks/form";
+@import "blocks/slider";
+@import "blocks/buttons";
+@import "blocks/section";
+@import "blocks/breadcrumbs";
+@import "blocks/to-top-button";
+@import "blocks/header";                 // Шапка сайта
+@import "blocks/nav";
+@import "blocks/jumbotron";              // Первый экран
+@import "blocks/aboutus";
+@import "blocks/services";
+@import "blocks/feedback";
+// @import "blocks/panoramas";
+@import "blocks/sectors";
+// @import "blocks/action";
+@import "blocks/tagcloud";
+@import "blocks/calendar";
+@import "blocks/widget";
+@import "blocks/footer";                 // Подвал сайта
+
+
+@import "pages/archive";
+@import "pages/error404";

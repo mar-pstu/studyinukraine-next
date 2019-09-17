@@ -1,0 +1,56 @@
+//
+//	WP
+//	Странциа Архива
+//
+
+
+
+
+.archive {
+
+
+	.entry {
+		margin: 2em auto 4em auto;
+	}
+
+
+	&__entry {
+		.thumbnail {
+			display: block;
+			margin: 0.5em 0;
+			border-radius: 1em;
+			overflow: hidden;
+		}
+		.thumbnail img {
+			display: block;
+		}
+		.title {
+			margin: 0;
+		}
+		.title a {
+			text-decoration: none;
+		}
+		.excerpt {
+			margin-bottom: 0.5em;
+		}
+		.permalink:after {
+			@extend %button-icon;
+			@extend %icon-send;
+		}
+		p {
+			margin: 0;
+		}
+		.datetime {
+			font-weight: bold;
+			font-size: 85%;
+			&:before {
+				@extend %button-icon;
+				@extend %icon-datetime;
+				margin-right: 0.2em;
+				margin-left: 0;
+			}
+		}
+	}
+
+	
+}

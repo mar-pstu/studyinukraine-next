@@ -1,0 +1,51 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+form {
+
+	label {
+		display: block;
+		font-weight: bold;
+		margin-top: 0.5em;
+	}
+
+	textarea,
+	input[ type="text" ],
+	input[ type="email" ],
+	input[ type="password" ] {
+		@extend %text-control;
+		display: block;
+		border: 1px solid $brand-default;
+		// margin: 5px auto;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+		width: 100%;
+		box-sizing: border-box;
+		outline: none;
+	}
+
+
+	textarea {
+		resize: vertical;
+	}
+
+
+	input[ type="submit" ] {
+		@extend .btn;
+		@extend .btn-success;
+		margin: 1em auto;
+	}
+
+
+}

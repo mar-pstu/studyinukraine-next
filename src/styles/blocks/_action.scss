@@ -1,0 +1,38 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.action {
+
+	@extend %parallax;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 35vh;
+	padding: 5em 2em;
+	box-shadow: 0 0 2em rgba( 0, 0, 0, 0.5 ) inset;
+
+	.logo {
+		width: 150px;
+		height: 150px;
+	}
+
+	.title {
+		color: #fff;
+		text-shadow: 2px 2px 5px rgba( 0, 0, 0, 0.5 );
+		text-align: center;
+		max-width: 800px;
+	}
+
+}

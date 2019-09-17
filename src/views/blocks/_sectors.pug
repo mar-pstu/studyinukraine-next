@@ -1,0 +1,30 @@
+
+
+
+
+mixin sector_entry( args )
+	.col-xs-6.col-sm-4.col-md-3.col-lg-2
+		figure.sectors__entry.entry( href="#" )
+			a.thumbnail( href="#" ): img.lazy( src="#", data-src=args.thumbnail, alt=args.title )
+			figcaption.title #[a( href="#" ) #{args.title}]
+
+
+
+section.section.sectors#sectors
+	h2.title Learning programs
+	.container: .row.center-xs
+		+sector_entry( { title: 'Производство и технологии', thumbnail: src.img+'sectors/18.png' } )
+		+sector_entry( { title: 'Химическая и биоинженерия', thumbnail: src.img+'sectors/16.png' } )
+		+sector_entry( { title: 'Транспорт', thumbnail: src.img+'sectors/27.png' } )
+		+sector_entry( { title: 'Сфера обслуживания', thumbnail: src.img+'sectors/24.png' } )
+		+sector_entry( { title: 'Социальная работа', thumbnail: src.img+'sectors/23.png' } )
+		+sector_entry( { title: 'Архитектура', thumbnail: src.img+'sectors/19.png' } )
+		+sector_entry( { title: 'Автоматизация', thumbnail: src.img+'sectors/15.png' } )
+		+sector_entry( { title: 'Электротехника', thumbnail: src.img+'sectors/14.png' } )
+		+sector_entry( { title: 'Механическая инженерия', thumbnail: src.img+'sectors/13.png' } )
+		+sector_entry( { title: 'Информационные технологии', thumbnail: src.img+'sectors/12.png' } )
+		+sector_entry( { title: 'Математика и статистика', thumbnail: src.img+'sectors/11.png' } )
+		+sector_entry( { title: 'Управление и администрирование', thumbnail: src.img+'sectors/07.png' } )
+		+sector_entry( { title: 'Социальные и поведенческие науки', thumbnail: src.img+'sectors/05.png' } )
+		+sector_entry( { title: 'Гуманитарные науки', thumbnail: src.img+'sectors/03.png' } )
+		+sector_entry( { title: 'Образование и педагогика', thumbnail: src.img+'sectors/01.png' } )

@@ -1,0 +1,15 @@
+extend layout/_index
+
+
+block variables
+	- page.type = 'page';
+	- page.title = 'Страница / пост';
+
+
+block main
+	.main-bgi.lazy( data-src=src.img+'ukraine.png' )
+	.container
+		include blocks/_pageheader
+		include blocks/_breadcrumb
+		include blocks/_content
+		include blocks/_pager

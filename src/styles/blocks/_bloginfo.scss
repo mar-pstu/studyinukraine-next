@@ -1,0 +1,41 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bloginfo {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+	}
+
+	.name {
+		font-weight: bold;
+		font-size: 1em;
+	}
+
+	.custom-logo {
+		width: 6em;
+		height: 6em;
+		flex-shrink: 0;
+	}
+
+}

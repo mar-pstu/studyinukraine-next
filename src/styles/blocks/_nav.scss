@@ -1,0 +1,63 @@
+
+
+
+
+
+
+
+
+
+
+.nav {
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 225px;
+	background-color: lighten( $brand-success, 5% );
+	color: #fff;
+	z-index: 999;
+	box-shadow: none;
+	padding: 0.5em;
+	transform-origin: top left;
+	transform: translate( -100%, 0% );
+	transition: transform 200ms, box-shadow 200ms;
+	overflow-y: auto;
+	overflow-x: hidden;
+
+	@include min-width( 320 ) {
+		width: 280px;
+	}
+
+	a {
+		display: block;
+		color: #fff;
+		text-decoration: none;
+		&:hover {
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+
+	&--active {
+		box-shadow: 0 0 1em rgba( 0, 0, 0, 0.5 );
+		transform: translate( 0%, 0% );
+	}
+
+
+	&::-webkit-scrollbar {
+	    width: 0.5em;
+	    background-color: rgba( 255, 255, 255, 0.2 );
+	}
+
+	&::-webkit-scrollbar-thumb {
+	    width: 100%;
+	    background: rgba( 255, 255, 255, 0.4 );
+	    border-radius: 0.3em;
+	    transition: background-color 200ms;
+	    &:hover { background: rgba( 255, 255, 255, 0.6 ); }
+	}
+
+
+}

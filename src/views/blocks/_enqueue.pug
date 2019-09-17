@@ -1,0 +1,51 @@
+//-
+	Подключение скриптов и стилей
+
+
+link( href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext", rel="stylesheet" )
+
+
+script( type="text/javascript", src=src.js+'jquery.js' )
+
+
+link( rel="stylesheet", href=src.css+'main.css' )
+script( type="text/javascript", src=src.js+'main.js' )
+
+
+link( rel="stylesheet", href=src.css+'slick.css' )
+script( type="text/javascript", src=src.js+'slick.js' )
+script.
+	( function () {
+		jQuery( '#reviews' ).slick( {
+			arrows: false,
+			speed: 300,
+			dots: true,
+			slidesToShow: 1,
+			autoplay: true,
+			autoplaySpeed: 1500,
+		} );
+	} )();
+
+
+script( type="text/javascript", src=src.js+'lazyload.js' )
+script.
+	jQuery( ".lazy" ).lazy();
+
+
+link( rel="stylesheet", href=src.css+'fancybox.css' )
+script( type="text/javascript", src=src.js+'fancybox.js' )
+
+
+script( type="text/javascript", src=src.js+'headhesive.js' )
+script.
+	//- jQuery( document ).ready( function() {
+		var header = new Headhesive( '#header', {
+			offset: 500
+		} );
+	//- } );
+
+
+
+script( src=src.js+"superembed.js" )
+script.
+	jQuery( '.fancybox' ).fancybox();

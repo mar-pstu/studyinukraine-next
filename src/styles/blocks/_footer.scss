@@ -1,0 +1,51 @@
+//
+//
+//	ПОдвал сайта
+//
+//
+
+
+
+.footer {
+
+	color: #c8c8c8;
+	font-size: 85%;
+	padding: 1em 0;
+
+	a {
+		text-decoration: none;
+		color: inherit;
+		&:hover {
+			text-decoration: none;
+			color: inherit;
+		}
+	}
+
+	p {
+		margin: 1em 0;
+	}
+
+	&__copyright {
+		text-align: center;
+		@include min-width( $screen-md ) {
+			text-align: left;
+		}
+	}
+
+	&__developer {
+		text-align: center;
+		@include min-width( $screen-md ) {
+			text-align: right;
+		}
+	}
+
+	.contacts a {
+		width: 3em;
+		height: 3em;
+		@include min-width( $screen-lg ) {
+			width: 2em;
+			height: 2em;
+		}
+	}
+
+}

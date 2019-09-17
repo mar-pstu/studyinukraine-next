@@ -1,0 +1,44 @@
+//
+//    WRAPPER
+//    контейнер страницы, прижатие футера
+
+
+.wrapper {
+  margin: 0px auto;
+  min-width: 300px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 5px rgba( 0, 0, 0, 0.25 );
+  position: relative;
+
+  &__item--main {
+  	flex: 1;
+    position: relative;
+    .main-bgi {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 300px;
+      height: 300px;
+      max-width: 100%;
+      transform: translate(-50%,5%);
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      opacity: .15;
+      z-index: -1;
+      @include min-width( $screen-sm ) {
+        width: 512px;
+        height: 512px;
+      }
+    }
+  }
+
+  &__item--header,
+  &__item--footer {
+    background-color: #eee;
+    padding: 1em 0;
+  }
+
+}

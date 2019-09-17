@@ -1,0 +1,46 @@
+//
+//
+//  Шапка сайта
+//
+//
+
+
+.header {
+
+	background-color: $brand-primary;
+	color: #fff;
+
+	.bloginfo .name {
+		color: #fff;
+	}
+
+
+	&__burger {
+		@extend %background-icon;
+		vertical-align: middle;
+		display: inline-block;
+		margin-left: 3em;
+		background-image: url( 'data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDYxMiA2MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDYxMiA2MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48Zz48Zz4KCTxnPgoJCTxwYXRoIGQ9Ik02MDQuMjY3LDE5NC43MjdjNC4yNTcsMCw3LjczMy0zLjY0NCw3LjczMy03LjczM3YtNDAuMTY5YzAtNC4yNTYtMy4yODMtNy43MzMtNy43MzMtNy43MzNINy43MzMgICAgYy00LjI1NiwwLTcuNzMzLDMuNjQ0LTcuNzMzLDcuNzMzdjQwLjE2OWMwLDQuMjU2LDMuMjgzLDcuNzMzLDcuNzMzLDcuNzMzSDYwNC4yNjd6IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIHN0eWxlPSJmaWxsOiNGRkZGRkYiIGRhdGEtb2xkX2NvbG9yPSIjMDAwMDAwIj48L3BhdGg+CgkJPHBhdGggZD0iTTAsMzI2LjA4NGMwLDQuMjU2LDMuMjgzLDcuNzMzLDcuNzMzLDcuNzMzaDU5Ni41MzNjNC4yNTYsMCw3LjczMy0zLjY0NSw3LjczMy03LjczM3YtNDAuMTY5ICAgIGMwLTQuMjg0LTMuMjgzLTcuNzMzLTcuNzMzLTcuNzMzSDcuNzMzYy00LjI1NiwwLTcuNzMzLDMuNjQ1LTcuNzMzLDcuNzMzVjMyNi4wODR6IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIHN0eWxlPSJmaWxsOiNGRkZGRkYiIGRhdGEtb2xkX2NvbG9yPSIjMDAwMDAwIj48L3BhdGg+CgkJPHBhdGggZD0iTTAsNDY1LjE3NWMwLDQuMjU2LDMuMjgzLDcuNzMzLDcuNzMzLDcuNzMzaDU5Ni41MzNjNC4yNTYsMCw3LjczMy0zLjY0NSw3LjczMy03LjczM3YtNDAuMTY5ICAgIGMwLTQuMjU2LTMuMjgzLTcuNzMyLTcuNzMzLTcuNzMySDcuNzMzYy00LjI1NiwwLTcuNzMzLDMuNjQ0LTcuNzMzLDcuNzMyVjQ2NS4xNzV6IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIHN0eWxlPSJmaWxsOiNGRkZGRkYiIGRhdGEtb2xkX2NvbG9yPSIjMDAwMDAwIj48L3BhdGg+Cgk8L2c+CjwvZz48L2c+IDwvc3ZnPg==' );
+		width: 2em;
+		height: 2em;
+		background-color: transparent;
+		border: none;
+	}
+
+
+	&.headhesive {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		transform: translate( 0%, -100% );
+		transition: transform 200ms;
+		z-index: 999;
+		&--stick {
+			transform: translate( 0%, 0% );
+			.bloginfo .custom-logo { width: 50px; height: 50px; margin-right: 1em; }
+			.bloginfo .name { font-size: 85%; }
+		}
+	}
+
+}

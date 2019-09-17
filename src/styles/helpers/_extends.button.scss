@@ -1,0 +1,37 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%button {
+	display: inline-block;
+	text-decoration: none;
+	transition: box-shadow 200ms;
+	cursor: pointer;
+	border: none;
+	padding: 0.5em 2em;
+	border-radius: 2em;
+
+	&:hover { text-decoration: none; }
+
+}
+
+
+%button-icon {
+	@extend %background-icon;
+	content: '';
+	display: inline-block;
+	margin-left: 0.5em;
+	vertical-align: middle;
+	width: 1em;
+	height: 1em;
+}

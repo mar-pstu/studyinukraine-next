@@ -1,0 +1,45 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slick-dots {
+	margin: 1em 0;
+	padding: 0;
+	display: block;
+	text-align: center;
+	list-style-type: none;
+	li {
+		display: inline-block;
+		margin: 0 5px;
+	}
+	button {
+		display: block;
+		width: 10px;
+		height: 10px;
+		margin: 0;
+		padding: 0;
+		border-radius: 50%;
+		background-color: transparentize( $brand-warning, 0.5 );
+		transition: background-color 200ms;
+		font-size: 0;
+		line-height: 0;
+		border: none;
+		cursor: pointer;
+	}
+	.slick-active button {
+		background-color: $brand-warning;
+	}
+}
