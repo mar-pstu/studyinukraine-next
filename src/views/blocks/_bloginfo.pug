@@ -2,6 +2,8 @@
 
 
 
-a.bloginfo( href="/" )
-	img.custom-logo( src=src.img+'logo.png', alt=blog.name )
-	.name #{blog.name}
+.bloginfo
+	a.custom-logo-link( href="#" ): img.custom-logo( src=src.img+'logo-2.png', alt=blog.name )
+	a.network( href="#" ) #{blog.network}
+	span.separator
+	a.name( href="/" ) #{blog.name}

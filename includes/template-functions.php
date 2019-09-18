@@ -203,3 +203,36 @@ function get_translate_id( $id, $type = 'post' ) {
   } // if defined
   return $result;
 }
+
+
+
+
+
+function get_languages_list() {
+  $result = array();
+  if ( ( function_exists( 'pll_the_languages' ) ) && ( function_exists( 'pll_current_language' ) ) ) {
+    $current = pll_current_language( 'slug' );
+    $other = pll_the_languages( array(
+      'dropdown'           => 0,
+      'show_names'         => '',
+      'display_names_as'   => 'slug',
+      'show_flags'         => 0,
+      'hide_if_empty'      => 0,
+      'force_home'         => 0,
+      'echo'               => 0,
+      'hide_if_no_translation' => 0,
+      'hide_current'       => 1,
+      'post_id'            => ( is_singular() ) ? get_the_ID() : NULL,
+      'raw'                => 1,
+    ) );
+    if ( ( $other ) && ( ! empty( $other ) ) ) {
+      $result[] = '<li class="current">' . $current . '</li>';
+      foreach ( $other as $lang ) $result[] = sprintf(
+        '<li><a href="%1$s">%2$s</a></li>',
+        $lang[ 'url' ],
+        $lang[ 'name' ]
+      );
+    }
+  }
+  if ( ! empty( $result ) ) echo '<ul class="languages">' . implode( "\r\n", $result ) . '</ul>';
+}

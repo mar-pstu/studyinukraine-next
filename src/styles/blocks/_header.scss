@@ -10,7 +10,12 @@
 	background-color: $brand-primary;
 	color: #fff;
 
-	.bloginfo .name {
+	.bloginfo .separator {
+		background-color: #fff;
+	}
+
+	.bloginfo .name,
+	.bloginfo .network {
 		color: #fff;
 	}
 
@@ -38,8 +43,9 @@
 		z-index: 999;
 		&--stick {
 			transform: translate( 0%, 0% );
-			.bloginfo .custom-logo { width: 50px; height: 50px; margin-right: 1em; }
-			.bloginfo .name { font-size: 85%; }
+			.bloginfo .custom-logo-link { width: 50px; height: 50px; margin-right: 1em; }
+			.bloginfo .network { font-size: 75%; }
+			.bloginfo .name { font-size: 120%; }
 		}
 	}
 

@@ -21,21 +21,60 @@
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
+	flex-wrap: wrap;
 	text-decoration: none;
+	font-weight: bold;
 
-	&:hover {
-		text-decoration: none;
+	@include min-width( $screen-sm ) {
+		flex-wrap: nowrap;
 	}
 
-	.name {
+	a, &:hover { text-decoration: none; }
+
+
+	.network {
 		font-weight: bold;
-		font-size: 1em;
+		font-size: 75%;
+		order: -1;
+		min-width: 100%;
+		@include min-width( $screen-sm ) {
+			order: initial;
+			display: block;
+			max-width: 10em;
+			min-width: auto;
+			font-size: 85%;
+		}
+		&:hover { text-decoration: none; }
 	}
 
-	.custom-logo {
-		width: 6em;
-		height: 6em;
+	.custom-logo-link {
+		text-decoration: none;
+		width: 4em;
+		height: 4em;
 		flex-shrink: 0;
+		margin-right: 0.5em;
+		&:hover { text-decoration: none; }
 	}
+
+	.network ~ .name { 
+		font-size: 1.2em;
+		flex-shrink: 1;
+		max-width: 5em;
+		@include min-width( $screen-sm ) { font-size: 1.5em; max-width: none; }
+		@include min-width( $screen-md ) { font-size: 2.0em; }
+	}
+
+	.separator {
+		width: 0.1em;
+		height: 2.5em;
+		background-color: $text-color;
+		vertical-align: middle;
+		display: none;
+		margin-left: 1em;
+		margin-right: 1em;
+		@include min-width( $screen-sm ) { display: block; }
+	}
+
+	.custom-logo { display: block; }
 
 }

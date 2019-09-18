@@ -9,7 +9,9 @@
   <body <?php body_class(); ?> data-nav="inactive">
     <nav class="nav" id="nav">
       <?php
+        echo studyinukraine_next\get_languages_list();
         if ( has_nav_menu( 'menu_main' ) ) {
+          echo '<h2>' . __( 'Меню', STUDYINUKRAINE_NEXT_TEXTDOMAIN ) . '</h2>';
           wp_nav_menu( array(
             'theme_location'  => 'menu_main',
             'menu'            => 'menu_main',
@@ -21,8 +23,9 @@
         }
         echo studyinukraine_next\render_contacts_list( get_theme_mod( STUDYINUKRAINE_NEXT_SLUG . '_contacts', array() ) );
         if ( is_active_sidebar( 'side_nav' ) ) {
-          echo "<hr>";
+          echo '<div class="small">';
           dynamic_sidebar( 'side_nav' );
+          echo '</div>';
         }
       ?>
     </nav>
@@ -31,13 +34,19 @@
         <div class="container">
           <div class="row middle-xs">
             <div class="col-xs-8 col-sm-8 col-md-6 col-lg-3">
-              <a class="bloginfo" href="<?php echo home_url( '/' ); ?>">
-                <?php echo studyinukraine_next\get_custom_logo_img(); ?>
-                <div class="name"><?php bloginfo( 'name' ); ?></div>
-              </a>
+              <div class="bloginfo">
+                <?php the_custom_logo(); ?>
+                <?php if ( is_multisite() ) : ?>
+                  <?php switch_to_blog( get_main_site_id() ); ?>
+                  <a class="network" href="<?php echo home_url( '/' ); ?>"></a>
+                  <span class="separator"></span>
+                  <?php restore_current_blog(); ?>
+                <?php endif; ?>
+                <a class="name" href="<?php echo home_url( '/' ); ?>"><?php bloginfo( 'name' ); ?></a>
+              </div>  
             </div>
             <div class="col-xs-4 col-sm-4 col-md-6 col-lg-9 text-right">
-              <button class="burger" id="burger">
+              <button class="burger" id="burger" title="<?php esc_attr_e( 'Открыть меню', STUDYINUKRAINE_NEXT_TEXTDOMAIN ); ?>">
                 <span class="bar bar1"></span>
                 <span class="bar bar2"></span>
                 <span class="bar bar3"></span>
