@@ -1805,7 +1805,7 @@ img.alignright, a.alignright img {
       .bloginfo .network {
         order: initial;
         display: block;
-        max-width: 10em;
+        max-width: 15em;
         min-width: auto;
         font-size: 85%; } }
     .bloginfo .network:hover {
@@ -1841,9 +1841,8 @@ img.alignright, a.alignright img {
       .bloginfo .separator {
         display: block; } }
   .bloginfo .custom-logo {
-    display: block; }
-  .bloginfo--network {
-    flex-wrap: wrap; }
+    display: block;
+    max-height: 100%; }
 
 .pager {
   margin: 25px 0px; }

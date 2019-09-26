@@ -8,9 +8,9 @@ $thumbnail_src = get_theme_mod( STUDYINUKRAINE_NEXT_SLUG . '_404_thumbnail', STU
 $title = get_theme_mod( STUDYINUKRAINE_NEXT_SLUG . '_404_title', __( 'Страница не найдена', STUDYINUKRAINE_NEXT_TEXTDOMAIN ) );
 $excerpt = get_theme_mod( STUDYINUKRAINE_NEXT_SLUG . '_404_excerpt', __( 'К сожалению страница не найдена. Проверьте правильность адреса или нажмите на любую ссылку выше.', STUDYINUKRAINE_NEXT_TEXTDOMAIN ) );
 
-if ( function_exists( 'ppl__' ) ) {
-  $title = ppl__( $title );
-  $excerpt = ppl__( $excerpt );
+if ( function_exists( 'pll__' ) ) {
+  $title = pll__( $title );
+  $excerpt = pll__( $excerpt );
 }
 
 ?>

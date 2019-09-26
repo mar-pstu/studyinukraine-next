@@ -40,7 +40,7 @@
 		@include min-width( $screen-sm ) {
 			order: initial;
 			display: block;
-			max-width: 10em;
+			max-width: 15em;
 			min-width: auto;
 			font-size: 85%;
 		}
@@ -75,6 +75,9 @@
 		@include min-width( $screen-sm ) { display: block; }
 	}
 
-	.custom-logo { display: block; }
+	.custom-logo {
+		display: block;
+		max-height: 100%;
+	}
 
 }

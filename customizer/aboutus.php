@@ -66,7 +66,7 @@ for ( $i=0; $i<2; $i++ ) {
         STUDYINUKRAINE_NEXT_SLUG . "_aboutus[$i][page_id]",
         array(
             'section'           => STUDYINUKRAINE_NEXT_SLUG . '_aboutus',
-            'label'             => __( 'Выбор страницы', STUDYINUKRAINE_NEXT_TEXTDOMAIN ) . ' ' . ( $i +1 ),
+            'label'             => __( 'Выбор страницы', STUDYINUKRAINE_NEXT_TEXTDOMAIN ) . ' ' . ( $i + 1 ),
             'type'              => 'dropdown-pages',
         )
     ); /**/
@@ -74,15 +74,32 @@ for ( $i=0; $i<2; $i++ ) {
         STUDYINUKRAINE_NEXT_SLUG . "_aboutus[$i][label]",
         array(
             'default'           => __( 'Подробней', STUDYINUKRAINE_NEXT_TEXTDOMAIN ),
-            'transport'         => 'reset'
+            'transport'         => 'reset',
+            'sanitize_callback' => 'sanitize_text_field',
         )
     );
     $wp_customize->add_control(
         STUDYINUKRAINE_NEXT_SLUG . "_aboutus[$i][label]",
         array(
             'section'           => STUDYINUKRAINE_NEXT_SLUG . '_aboutus',
-            'label'             => __( 'Текст кнопки', STUDYINUKRAINE_NEXT_TEXTDOMAIN ) . ' ' . ( $i +1 ),
+            'label'             => __( 'Текст кнопки', STUDYINUKRAINE_NEXT_TEXTDOMAIN ) . ' ' . ( $i + 1 ),
             'type'              => 'text',
+        )
+    ); /**/
+    $wp_customize->add_setting(
+        STUDYINUKRAINE_NEXT_SLUG . "_aboutus[$i][excerpt]",
+        array(
+            'default'           => '',
+            'transport'         => 'reset',
+            'sanitize_callback' => 'sanitize_textarea_field',
+        )
+    );
+    $wp_customize->add_control(
+        STUDYINUKRAINE_NEXT_SLUG . "_aboutus[$i][excerpt]",
+        array(
+            'section'           => STUDYINUKRAINE_NEXT_SLUG . '_aboutus',
+            'label'             => __( 'Описание', STUDYINUKRAINE_NEXT_TEXTDOMAIN ) . ' ' . ( $i + 1 ),
+            'type'              => 'textarea',
         )
     ); /**/
     $wp_customize->add_setting(
@@ -96,7 +113,7 @@ for ( $i=0; $i<2; $i++ ) {
         STUDYINUKRAINE_NEXT_SLUG . "_aboutus[$i][reversing]",
         array(
             'section'           => STUDYINUKRAINE_NEXT_SLUG . '_aboutus',
-            'label'             => __( 'Обратный порядок', STUDYINUKRAINE_NEXT_TEXTDOMAIN ) . ' ' . ( $i +1 ),
+            'label'             => __( 'Обратный порядок', STUDYINUKRAINE_NEXT_TEXTDOMAIN ) . ' ' . ( $i + 1 ),
             'type'              => 'checkbox',
         )
     ); /**/

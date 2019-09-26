@@ -16,7 +16,11 @@ if ( ! empty( $sections ) ) {
 			$thumbnail_src = false;
 			$thumbnail_alt = '';
 			$title = get_the_title( $page_id );
-			$excerpt = get_the_excerpt( $page_id );
+			if ( isset( $section[ 'excerpt' ] ) && ! empty( $section[ 'excerpt' ] ) ) {
+				$excerpt = ( function_exists( 'pll__' ) ) ? pll__( $section[ 'excerpt' ] ) : $section[ 'excerpt' ];
+			} else {
+				$excerpt = get_the_excerpt( $page_id );
+			}
 			if ( isset( $section[ 'thumbnail' ] ) ) {
 				$thumbnail_alt = esc_attr( $title );
 				$thumbnail_src = $section[ 'thumbnail' ];
@@ -26,6 +30,9 @@ if ( ! empty( $sections ) ) {
 			}
 			$label = ( isset( $section[ 'label' ] ) ) ? $section[ 'label' ] : __( 'Подробней', STUDYINUKRAINE_NEXT_TEXTDOMAIN );
 			$permalink = get_permalink( $page_id );
+			if ( function_exists( 'pll__' ) ) {
+				$label = pll__( $label );
+			}
 			include get_theme_file_path( 'views/section.php' );
 		}
 	}

@@ -7,7 +7,6 @@ if ( ! defined( 'ABSPATH' ) ) { exit; };
 
 $sectors_page_id = studyinukraine_next\get_translate_id( get_theme_mod( STUDYINUKRAINE_NEXT_SLUG . '_sectors_page_id', 0 ), 'page' );
 
-
 $entries = get_pages( array(
   'sort_order'   => 'ASC',
   'sort_column'  => 'post_title',
@@ -17,13 +16,20 @@ $entries = get_pages( array(
 ) );
 
 
+$section_sectors_title = get_theme_mod( STUDYINUKRAINE_NEXT_SLUG . '_sectors_title', __( 'Области знаний', STUDYINUKRAINE_NEXT_TEXTDOMAIN ) );
+
+if ( function_exists( 'pll__' ) ) {
+  $section_sectors_title = pll__( $section_sectors_title );
+}
+
+
 ?>
 
 
 
 <?php if ( is_array( $entries ) && ! empty( $entries ) ) : ?>
   <section class="section sectors" id="sectors">
-    <h2 class="title"><?php echo get_theme_mod( STUDYINUKRAINE_NEXT_SLUG . '_sectors_title', __( 'Области знаний', STUDYINUKRAINE_NEXT_TEXTDOMAIN ) ); ?></h2>
+    <h2 class="title"><?php echo $section_sectors_title; ?></h2>
     <div class="container">
       <div class="row center-xs">
         <?php foreach ( $entries as $entry ) : setup_postdata( $entry ); ?>

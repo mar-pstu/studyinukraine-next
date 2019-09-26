@@ -51,6 +51,7 @@ if ( ! empty( $reviews = get_theme_mod( STUDYINUKRAINE_NEXT_SLUG . '_reviews', a
 if ( ! empty( $aboutus_entries = get_theme_mod( STUDYINUKRAINE_NEXT_SLUG . '_aboutus', array() ) ) ) {
 	for ( $i=0; $i<count( $aboutus_entries ); $i++ ) { 
 		if ( ! empty( $aboutus_entries[ $i ][ 'label' ] ) ) pll_register_string( 'aboutus_label_' . ( $i + 1 ), $aboutus_entries[ $i ][ 'label' ], STUDYINUKRAINE_NEXT_TEXTDOMAIN, false );
+        if ( ! empty( $aboutus_entries[ $i ][ 'excerpt' ] ) ) pll_register_string( 'aboutus_excerpt_' . ( $i + 1 ), $aboutus_entries[ $i ][ 'excerpt' ], STUDYINUKRAINE_NEXT_TEXTDOMAIN, false );
 	}
 }
 

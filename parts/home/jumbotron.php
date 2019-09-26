@@ -10,10 +10,10 @@ $reviews = get_theme_mod( STUDYINUKRAINE_NEXT_SLUG . '_reviews', array() );
 $page_id = studyinukraine_next\get_translate_id( get_theme_mod( STUDYINUKRAINE_NEXT_SLUG . '_jumbotron_page_id', '' ), 'page' );
 
 
-if ( function_exists( 'ppl__' ) ) {
-  $title = ppl__( $title );
-  $excerpt = ppl__( $excerpt );
-  $label = ppl__( $label );
+if ( function_exists( 'pll__' ) ) {
+  $title = pll__( $title );
+  $excerpt = pll__( $excerpt );
+  $label = pll__( $label );
 }
 
 

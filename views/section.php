@@ -10,7 +10,7 @@
       <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6">
         <h2><?php echo $title; ?></h2>
         <?php echo $excerpt; ?>
-        <a class="btn btn-success permalink" href="<?php echo $permalink; ?>"><?php echo $label; ?></a>
+        <div><a class="btn btn-success permalink" href="<?php echo $permalink; ?>"><?php echo $label; ?></a></div>
       </div>
     </div>
   </div>

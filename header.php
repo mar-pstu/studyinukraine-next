@@ -33,19 +33,19 @@
       <header class="wrapper__item wrapper__item--header header" id="header">
         <div class="container">
           <div class="row middle-xs">
-            <div class="col-xs-8 col-sm-8 col-md-6 col-lg-3">
+            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
               <div class="bloginfo">
                 <?php the_custom_logo(); ?>
                 <?php if ( is_multisite() ) : ?>
                   <?php switch_to_blog( get_main_site_id() ); ?>
-                  <a class="network" href="<?php echo home_url( '/' ); ?>"></a>
+                  <a class="network" href="<?php echo home_url( '/' ); ?>"><?php bloginfo( 'description' ); ?></a>
                   <span class="separator"></span>
                   <?php restore_current_blog(); ?>
                 <?php endif; ?>
                 <a class="name" href="<?php echo home_url( '/' ); ?>"><?php bloginfo( 'name' ); ?></a>
               </div>  
             </div>
-            <div class="col-xs-4 col-sm-4 col-md-6 col-lg-9 text-right">
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-right">
               <button class="burger" id="burger" title="<?php esc_attr_e( 'Открыть меню', STUDYINUKRAINE_NEXT_TEXTDOMAIN ); ?>">
                 <span class="bar bar1"></span>
                 <span class="bar bar2"></span>

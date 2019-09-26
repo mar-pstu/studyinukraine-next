@@ -119,9 +119,9 @@ function render_reviews( $entries = array() ) {
   if ( ! empty( $entries ) ) {
     foreach ( $entries as $entry ) {
         if ( ! empty( $entry[ 'text' ] ) ) {
-          if ( function_exists( 'ppl__' ) ) {
-            $entry[ 'text' ] = ppl__( $entry[ 'text' ] );
-            $entry[ 'author' ] = ppl__( $entry[ 'author' ] );
+          if ( function_exists( 'pll__' ) ) {
+            $entry[ 'text' ] = pll__( $entry[ 'text' ] );
+            $entry[ 'author' ] = pll__( $entry[ 'author' ] );
           }
           $result[] = sprintf(
             '<blockquote class="reviews__entry entry"><span>%1$s</span><cite>%2$s</cite></blockquote>',
