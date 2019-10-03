@@ -103,14 +103,14 @@ for ( $i=0; $i<2; $i++ ) {
         )
     ); /**/
     $wp_customize->add_setting(
-        STUDYINUKRAINE_NEXT_SLUG . "_aboutus[$i][reversing]",
+        STUDYINUKRAINE_NEXT_SLUG . "_aboutus[$i][reverse]",
         array(
             'default'           => false,
             'transport'         => 'reset'
         )
     );
     $wp_customize->add_control(
-        STUDYINUKRAINE_NEXT_SLUG . "_aboutus[$i][reversing]",
+        STUDYINUKRAINE_NEXT_SLUG . "_aboutus[$i][reverse]",
         array(
             'section'           => STUDYINUKRAINE_NEXT_SLUG . '_aboutus',
             'label'             => __( 'Обратный порядок', STUDYINUKRAINE_NEXT_TEXTDOMAIN ) . ' ' . ( $i + 1 ),

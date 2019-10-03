@@ -27,10 +27,21 @@ if ( is_admin() ) {
 if ( empty( get_theme_mod( STUDYINUKRAINE_NEXT_SLUG . '_jumbotron_feedback_form', '' ) ) ) {
     get_template_part( 'includes/feedback-form-ajax' );
     $feedback_form = new StudyInUkraineFeedbackFormAjaxClass(
-        STUDYINUKRAINE_NEXT_SLUG,
         'jumbotron-feedback-form',
         STUDYINUKRAINE_NEXT_TEXTDOMAIN,
         get_theme_mod( STUDYINUKRAINE_NEXT_SLUG . '_jumbotron_feedback_admin', get_bloginfo( 'admin_email' ) )
+    );
+    $feedback_form->run();
+}
+
+
+
+if ( empty( get_theme_mod( STUDYINUKRAINE_NEXT_SLUG . '_questions_feedback_form', '' ) ) ) {
+    get_template_part( 'includes/questions-form-ajax' );
+    $feedback_form = new StudyInUkraineQuestionsFormAjaxClass(
+        'questions-feedback-form',
+        STUDYINUKRAINE_NEXT_TEXTDOMAIN,
+        get_theme_mod( STUDYINUKRAINE_NEXT_SLUG . '_questions_feedback_admin', get_bloginfo( 'admin_email' ) )
     );
     $feedback_form->run();
 }
@@ -52,6 +63,8 @@ if ( is_customize_preview() ) {
         include get_theme_file_path( 'customizer/aboutus.php' );
         include get_theme_file_path( 'customizer/services.php' );
         include get_theme_file_path( 'customizer/sectors.php' );
+        include get_theme_file_path( 'customizer/steps.php' );
+        include get_theme_file_path( 'customizer/questions.php' );
         include get_theme_file_path( 'customizer/contacts.php' );
         include get_theme_file_path( 'customizer/404.php' );
     } );

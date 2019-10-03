@@ -15,20 +15,27 @@
 	@extend %button;
 
 	&-primary {
-		background-color: $brand-primary;
-		color: #fff;
+		@extend %button-primary;
 	}
 
 
 	&-success {
-		background-color: $brand-success;
-		color: #fff;
+		@extend %button-success;
 	}
 
 
 	&-warning {
-		background-color: $brand-warning;
-		color: #fff;
+		@extend %button-warning;
+	}
+
+
+	&-sm {
+		@extend %button-small;
+	}
+
+
+	&-lg {
+		@extend %button-large;
 	}
 
 

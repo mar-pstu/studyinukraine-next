@@ -126,7 +126,7 @@ $wp_customize->add_control(
        $wp_customize,
        STUDYINUKRAINE_NEXT_SLUG . '_jumbotron_thumbnail',
        array(
-           'label'      => __( 'Превью', 'theme_name' ),
+           'label'      => __( 'Превью', STUDYINUKRAINE_NEXT_TEXTDOMAIN ),
            'section'    => STUDYINUKRAINE_NEXT_SLUG . '_jumbotron',
            'settings'   => STUDYINUKRAINE_NEXT_SLUG . '_jumbotron_thumbnail'
        )

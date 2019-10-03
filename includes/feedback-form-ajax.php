@@ -3,6 +3,9 @@
 
 
 
+if ( ! defined( 'ABSPATH' ) ) { exit; };
+
+
 
 
 
@@ -13,10 +16,6 @@
  * 
  */
 class StudyInUkraineFeedbackFormAjaxClass {
-
-
-
-	protected $slug;
 
 
 
@@ -32,8 +31,7 @@ class StudyInUkraineFeedbackFormAjaxClass {
 
 
 
-	function __construct( $slug, $action, $textdomain, $admin_email ) {
-		$this->slug = $slug;
+	function __construct( $action, $textdomain, $admin_email ) {
 		$this->action = $action;
 		$this->textdomain = $textdomain;
 		$admin_email = $this->sanitize_emails_list( $admin_email );
@@ -48,8 +46,8 @@ class StudyInUkraineFeedbackFormAjaxClass {
 
 
 	public function manager() {
-		if ( isset( $_GET[ 'email' ] ) ) {
-			$email = $this->sanitize_emails_list( $_GET[ 'email' ] );
+		if ( isset( $_REQUEST[ 'email' ] ) ) {
+			$email = $this->sanitize_emails_list( $_REQUEST[ 'email' ] );
 			if ( empty( $email ) ) {
 				wp_send_json_error( __( 'Неверный email', $this->textdomain ) );
 			} else {
@@ -74,7 +72,7 @@ class StudyInUkraineFeedbackFormAjaxClass {
 	private function check_secure( $email ) {
 		$referer = check_ajax_referer( $this->action, 'security' );
 		$blacklist_check = ! wp_blacklist_check( '', $email, '', '', $this->get_the_user_ip(), '' );
-		$honey = isset( $_GET[ 'ulogin' ] ) && empty( $_GET[ 'ulogin' ] );
+		$honey = isset( $_REQUEST[ 'ulogin' ] ) && empty( $_REQUEST[ 'ulogin' ] );
 		return ( $referer && $blacklist_check && $honey );
 	}
 

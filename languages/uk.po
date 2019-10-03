@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2019-09-17 11:44+0300\n"
-"PO-Revision-Date: 2019-09-17 11:45+0300\n"
+"POT-Creation-Date: 2019-10-03 16:23+0300\n"
+"PO-Revision-Date: 2019-10-03 16:23+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: uk_UA\n"
@@ -42,7 +42,8 @@ msgstr "404"
 msgid "Настройки страницы 404"
 msgstr "Налаштування сторінки 404"
 
-#: customizer/404.php:34 customizer/jumbotron.php:70 customizer/sectors.php:50
+#: customizer/404.php:34 customizer/jumbotron.php:70
+#: customizer/questions.php:53 customizer/sectors.php:50
 msgid "Заголовок"
 msgstr "Заголовок"
 
@@ -59,16 +60,18 @@ msgid "О нас"
 msgstr "Про нас"
 
 #: customizer/aboutus.php:15 customizer/jumbotron.php:15
-#: customizer/sectors.php:15 customizer/services.php:15
+#: customizer/sectors.php:15 customizer/services.php:15 customizer/steps.php:15
 msgid "Секция главной страницы"
 msgstr "Секція головної сторінки"
 
 #: customizer/aboutus.php:33 customizer/jumbotron.php:34
-#: customizer/sectors.php:33 customizer/services.php:33
+#: customizer/questions.php:34 customizer/sectors.php:33
+#: customizer/services.php:33 customizer/steps.php:33
 msgid "Использовать секцию"
 msgstr "Використовувати секцію"
 
 #: customizer/aboutus.php:52 customizer/jumbotron.php:129
+#: customizer/questions.php:110
 msgid "Превью"
 msgstr "Прев'ю"
 
@@ -77,16 +80,21 @@ msgstr "Прев'ю"
 msgid "Выбор страницы"
 msgstr "Вибір сторінки"
 
-#: customizer/aboutus.php:76 customizer/jumbotron.php:100 index.php:28
-#: parts/home/aboutus.php:27 parts/home/jumbotron.php:8
+#: customizer/aboutus.php:76 customizer/jumbotron.php:100
+#: customizer/steps.php:167 index.php:28 parts/home/aboutus.php:31
+#: parts/home/jumbotron.php:8 views/home/steps.php:17
 msgid "Подробней"
 msgstr "Детальніше"
 
-#: customizer/aboutus.php:84 customizer/jumbotron.php:109
+#: customizer/aboutus.php:85 customizer/jumbotron.php:109
 msgid "Текст кнопки"
 msgstr "Текст кнопки"
 
-#: customizer/aboutus.php:99
+#: customizer/aboutus.php:101 customizer/jumbotron.php:89
+msgid "Описание"
+msgstr "Опис"
+
+#: customizer/aboutus.php:116
 msgid "Обратный порядок"
 msgstr "Зворотній порядок"
 
@@ -126,10 +134,6 @@ msgstr "Email"
 msgid "Первый экран"
 msgstr "Перший екран"
 
-#: customizer/jumbotron.php:89
-msgid "Описание"
-msgstr "Опис"
-
 #: customizer/jumbotron.php:141 parts/home/jumbotron.php:48
 msgid "Подать заявку на поступление"
 msgstr "Подати заявку на вступ"
@@ -138,17 +142,29 @@ msgstr "Подати заявку на вступ"
 msgid "Заголовок формы"
 msgstr "Заголовок форми"
 
-#: customizer/jumbotron.php:170
+#: customizer/jumbotron.php:170 customizer/questions.php:72
 msgid "Шорткод формы"
 msgstr "Шорткод форми"
 
-#: customizer/jumbotron.php:190
+#: customizer/jumbotron.php:190 customizer/questions.php:91
 msgid "Email админа (если используется форма темы)"
 msgstr "Email адміна (якщо використовується форма теми)"
 
 #: customizer/jumbotron.php:209
 msgid "Публиковать отзывы"
 msgstr "Опублікувати відгуки"
+
+#: customizer/questions.php:13
+msgid "Есть вопросы?"
+msgstr "Є питання?"
+
+#: customizer/questions.php:15
+msgid "Контактная форма подвала страницы"
+msgstr "Контактна форма підвалу сторінки"
+
+#: customizer/questions.php:44 parts/home/questions.php:8
+msgid "Остались вопросы? Позвоните нам!"
+msgstr "Залишилися питання? Зателефонуйте нам!"
 
 #: customizer/reviews.php:13
 msgid "Отзывы"
@@ -158,16 +174,20 @@ msgstr "Відгуки"
 msgid "Блок отзывов клиентов"
 msgstr "Блок відгуків клієнтів"
 
-#: customizer/reviews.php:33
+#: customizer/reviews.php:34
 msgid "Автор"
 msgstr "Автор"
 
-#: customizer/reviews.php:48
+#: customizer/reviews.php:50
 msgid "Отзыв"
 msgstr "Відгук"
 
+#: customizer/reviews.php:67
+msgid "Фото"
+msgstr "Фото"
+
 #: customizer/sectors.php:13 customizer/sectors.php:42
-#: parts/home/sectors.php:26
+#: parts/home/sectors.php:19
 msgid "Области знаний"
 msgstr "Галузі знань"
 
@@ -175,53 +195,111 @@ msgstr "Галузі знань"
 msgid "Услуги"
 msgstr "Послуги"
 
-#: functions.php:46
+#: customizer/steps.php:13
+msgid "Шаги"
+msgstr "Кроки"
+
+#: customizer/steps.php:42 parts/home/steps.php:12
+msgid "Шаги к поступлению"
+msgstr "Кроки до вступу"
+
+#: customizer/steps.php:51
+msgid "Заголовок секции"
+msgstr "Тема секції"
+
+#: customizer/steps.php:60 parts/home/steps.php:13
+msgid "Узнать всё о процедуре поступления"
+msgstr "Дізнатися все про процедуру вступу"
+
+#: customizer/steps.php:69
+msgid "Подпись кнопки с описанием"
+msgstr "Підпис кнопки з описом"
+
+#: customizer/steps.php:87
+msgid "Выбор страницы с описанием секции"
+msgstr "Вибір сторінки з описом секції"
+
+#: customizer/steps.php:104
+msgid "Количество шагов"
+msgstr "Кількість кроків"
+
+#: customizer/steps.php:128
+msgid "Заголовок шага"
+msgstr "Назва кроку"
+
+#: customizer/steps.php:144
+msgid "Описание шага"
+msgstr "Опис кроку"
+
+#: customizer/steps.php:160
+msgid "Выбор страницы с описанием шага"
+msgstr "Вибір сторінки з описом кроку"
+
+#: customizer/steps.php:176
+msgid "Подпись кнопки"
+msgstr "Підпис кнопки"
+
+#: customizer/steps.php:193
+msgid "Лого шага"
+msgstr "Лого кроку"
+
+#: functions.php:57
 msgid "Настройки темы \"StudyInUkraine\""
 msgstr "Налаштування теми \"StudyInUkraine\""
 
-#: functions.php:88
+#: functions.php:101
 msgid "Главное меню"
 msgstr "Головне меню"
 
-#: functions.php:89
+#: functions.php:102
 msgid "Меню страницы 404"
 msgstr "Меню сторінки 404"
 
-#: functions.php:101
+#: functions.php:114
 msgid "Правая колонка"
 msgstr "Права колонка"
 
-#: functions.php:111
+#: functions.php:124
 msgid "Сайдбар меню навигации"
 msgstr "Сайдбар меню навігації"
 
-#: header.php:45
+#: header.php:14
+msgid "Меню"
+msgstr "Меню"
+
+#: header.php:49 header.php:54
 msgid "Открыть меню"
 msgstr "Відкрити меню"
 
-#: includes/feedback-form-ajax.php:54 includes/feedback-form-ajax.php:67
+#: includes/feedback-form-ajax.php:52 includes/feedback-form-ajax.php:65
+#: includes/questions-form-ajax.php:57
 msgid "Неверный email"
 msgstr "Невірний email"
 
-#: includes/feedback-form-ajax.php:58
+#: includes/feedback-form-ajax.php:56 includes/questions-form-ajax.php:61
 msgid "Заявка отправлена"
 msgstr "Заявку відправлено"
 
-#: includes/feedback-form-ajax.php:60 views/feedback-form.php:19
+#: includes/feedback-form-ajax.php:58 includes/questions-form-ajax.php:63
+#: views/feedback-form.php:21 views/questions-form.php:21
 msgid "Попробуйте позже или обратитесь к администратору."
 msgstr "Спробуйте пізніше або зверніться до адміністратора."
 
-#: includes/feedback-form-ajax.php:63
+#: includes/feedback-form-ajax.php:61 includes/questions-form-ajax.php:66
 msgid "Вы забанены, обратитесь к администратору"
 msgstr "Ви забанені, зверніться до адміністратора"
 
-#: includes/feedback-form-ajax.php:91
+#: includes/feedback-form-ajax.php:89 includes/questions-form-ajax.php:126
 msgid "Сообщение с сайта"
 msgstr "Повідомлення з сайту"
 
 #: includes/metabox-bgi.php:42
 msgid "Фоновое изображение"
 msgstr "Фонове зображення"
+
+#: includes/questions-form-ajax.php:70
+msgid "Заполните поля формы"
+msgstr "Заповніть поля форми"
 
 #: includes/template-functions.php:94
 msgid "Смотреть предыдущий пост"
@@ -231,11 +309,11 @@ msgstr "Дивитися попередній пост"
 msgid "Смотреть следующий пост"
 msgstr "Наступне пост"
 
-#: includes/template-functions.php:161
+#: includes/template-functions.php:178
 msgid "Главная"
 msgstr "Головна"
 
-#: includes/template-functions.php:174
+#: includes/template-functions.php:191
 msgid "Домашняя страница"
 msgstr "Домашня сторінка"
 
@@ -243,21 +321,25 @@ msgstr "Домашня сторінка"
 msgid "Найти"
 msgstr "Знайти"
 
-#: views/feedback-form-message.php:4
+#: views/feedback-form-message.php:4 views/questions-form-message.php:4
 msgid "IP пользователя"
 msgstr "IP користувача"
 
-#: views/feedback-form-message.php:8
+#: views/feedback-form-message.php:8 views/questions-form-message.php:12
 msgid "Email пользователя"
 msgstr "Email пользователя"
 
-#: views/feedback-form.php:3
+#: views/feedback-form.php:3 views/questions-form.php:4
 msgid "Ваш email"
 msgstr "Ваш email"
 
-#: views/feedback-form.php:4
+#: views/feedback-form.php:5 views/questions-form.php:6
 msgid "Отправить"
 msgstr "Відправити"
+
+#: views/home/steps.php:22
+msgid "Визуализация шага"
+msgstr "Візуалізація кроку"
 
 #: views/metabox-bgi.php:5
 msgid "Удалить"
@@ -266,3 +348,21 @@ msgstr "Видалити"
 #: views/metabox-bgi.php:8
 msgid "Установить"
 msgstr "Встановити"
+
+#: views/questions-form-message.php:8
+msgid "Имя пользователя"
+msgstr "Ім'я користувача"
+
+#: views/questions-form-message.php:16 views/questions-form.php:5
+msgid "Сообщение"
+msgstr "Повідомлення"
+
+#: views/questions-form.php:3
+msgid "Ваше имя"
+msgstr "Ваше ім'я"
+
+#~ msgid "Попробуйте позже или обратитесь к администратору 1."
+#~ msgstr "Спробуйте пізніше або зверніться до адміністратора."
+
+#~ msgid "Попробуйте позже или обратитесь к администратору 2."
+#~ msgstr "Спробуйте пізніше або зверніться до адміністратора."

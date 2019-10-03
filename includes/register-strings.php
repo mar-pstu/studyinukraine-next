@@ -1,6 +1,6 @@
 <?php
 
-
+if ( ! defined( 'ABSPATH' ) ) { exit; };
 
 
 
@@ -9,14 +9,17 @@
 
 
 foreach ( array(
-    '404_title',
-    '404_excerpt',
-    'jumbotron_title',
-    'jumbotron_excerpt',
-    'jumbotron_label',
-    'jumbotron_feedback_title',
-    'jumbotron_feedback_form',
-    'sectors_title',
+    "404_title",
+    "404_excerpt",
+    "jumbotron_title",
+    "jumbotron_excerpt",
+    "jumbotron_label",
+    "jumbotron_feedback_title",
+    "jumbotron_feedback_form",
+    "sectors_title",
+    "questions_title",
+    "_steps_title",
+    "_steps_labe",
 ) as $key ) {
     $value = wp_strip_all_tags( get_theme_mod( STUDYINUKRAINE_NEXT_SLUG . '_' . $key, '' ) );
     if ( ! empty( $value ) ) {
@@ -68,3 +71,19 @@ if ( ! empty( $contacts = get_theme_mod( STUDYINUKRAINE_NEXT_SLUG . '_contacts',
 }
 
 
+
+
+
+
+/**
+* Перевод шагов к поступлению
+*/
+if ( ! empty( $steps = get_theme_mod( STUDYINUKRAINE_NEXT_SLUG . "_steps", array() ) ) ) {
+    for ( $i = 0; $i < get_theme_mod( STUDYINUKRAINE_NEXT_SLUG . "_steps_number", 3 ) ; $i++ ) {
+        foreach ( array( 'title', 'excerpt', 'label' ) as $key ) {
+            if ( ! empty( $steps[ $i ][ $key ] ) ) {
+                pll_register_string( "steps_{$i}_{$key}", $steps[ $i ][ $key ], STUDYINUKRAINE_NEXT_TEXTDOMAIN, false );
+            }
+        }
+    }
+}

@@ -23,7 +23,8 @@ for ( $i=0; $i<5; $i++ ) {
         STUDYINUKRAINE_NEXT_SLUG . "_reviews[$i][author]",
         array(
             'default'           => '',
-            'transport'         => 'reset'
+            'transport'         => 'reset',
+            'sanitize_callback' => 'sanitize_text_field',
         )
     );
     $wp_customize->add_control(
@@ -38,7 +39,8 @@ for ( $i=0; $i<5; $i++ ) {
         STUDYINUKRAINE_NEXT_SLUG . "_reviews[$i][text]",
         array(
             'default'           => '',
-            'transport'         => 'reset'
+            'transport'         => 'reset',
+            'sanitize_callback' => 'sanitize_textarea_field',
         )
     );
     $wp_customize->add_control(
@@ -49,4 +51,29 @@ for ( $i=0; $i<5; $i++ ) {
             'type'              => 'textarea',
         )
     ); /**/
+    $wp_customize->add_setting(
+        STUDYINUKRAINE_NEXT_SLUG . "_reviews[$i][foto_id]",
+        array(
+            'default'           =>  STUDYINUKRAINE_NEXT_URL . 'images/reviews/default.jpg',
+            'transport'         => 'reset',
+            'sanitize_callback' => 'absint',
+        )
+    );
+    $wp_customize->add_control(
+       new WP_Customize_Cropped_Image_Control(
+           $wp_customize,
+           STUDYINUKRAINE_NEXT_SLUG . "_reviews[$i][foto_id]",
+           array(
+                'label'         => __( 'Фото', 'theme_name' ) . ' ' . ( $i + 1 ),
+                'section'       => STUDYINUKRAINE_NEXT_SLUG . '_reviews',
+                'settings'      => STUDYINUKRAINE_NEXT_SLUG . "_reviews[$i][foto_id]",
+                'height'        => 100,
+                'width'         => 100,
+                'flex_width'    => false,
+                'flex_height'   => false,
+                'priority'      => 1
+           )
+       )
+    );
+
 }

@@ -4,25 +4,17 @@
 
 
 
-mixin reviews__entry()
-	blockquote.reviews__entry.entry
-		span "Before Coursecity, I was working two minimum wage jobs. Now, new life!"I learned most of my ogramming skills and hrough self-study and the material available.
-		cite Stephanie Magion
+
 
 
 .jumbotron#jumbotron.lazy( data-src=src.img+'jumbotron/bgi.svg' )
 	.jumbotron__page.page: .container
 		.row.center-xs.middle-xs
 			.col-xs-9.col-sm-5.col-md-5.col-lg-5: img.lazy.jumbotron__thumbnail.thumbnail( src="#", data-src=src.img+'jumbotron/thumbnail.png', alt='Education for all' )
-			//- .col-xs-9.col-sm-5.col-md-5.col-lg-5: img.lazy.jumbotron__thumbnail.thumbnail( src="#", data-src=src.img+'logo.png', alt='Education for all' )
 			.col-xs-9.col-sm-7.col-md-7.col-lg-7.first-sm
 				h1.title Education for all
 				p.excerpt A bank is a financial institution that accepts deposits from the public and creates credit. For all of your financial needs
 				a.btn.btn-success( href="#" ) Read More
 	.jumbotron__basement.basement: .container: .row
 		.col-xs-12.col-sm-6.col-md-5.col-lg-5: include ../forms/_feedback
-		.col-xs-12.col-sm-6.col-md-7.col-lg-7: .reviews#reviews
-			+reviews__entry
-			+reviews__entry
-			+reviews__entry
-			+reviews__entry
+		.col-xs-12.col-sm-6.col-md-7.col-lg-7: include ../blocks/_reviews

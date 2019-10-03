@@ -26,7 +26,7 @@ form {
 	input[ type="password" ] {
 		@extend %text-control;
 		display: block;
-		border: 1px solid $brand-default;
+		border: 1px solid $brand-success;
 		// margin: 5px auto;
 		margin-top: 0.5em;
 		margin-bottom: 0.5em;
@@ -41,10 +41,24 @@ form {
 	}
 
 
-	input[ type="submit" ] {
+	[ type="submit" ] {
 		@extend .btn;
-		@extend .btn-success;
 		margin: 1em auto;
+		background-color: $titles-color;
+		transition: background-color .2s;
+		&:hover { background-color: lighten( $titles-color, 15% ); }
+	}
+
+	[ type="submit" ]:after {
+		@extend %icon-send;
+		@extend %background-icon;
+		content: '';
+		display: inline-block;
+		width: 1em;
+		height: 1em;
+		vertical-align: middle;
+		margin-left: .5em;
+		margin-right: .5em;
 	}
 
 

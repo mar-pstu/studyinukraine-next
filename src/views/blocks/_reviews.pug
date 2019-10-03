@@ -1,0 +1,27 @@
+
+
+
+
+
+
+
+mixin reviews_entry( args )
+	div: .reviews__entry.entry
+		img.foto( src="#", data-lazy=args.foto, alt="Stephanie Magion" )
+		blockquote
+			span "Before Coursecity, I was working two minimum wage jobs. Now, new life!"I learned most of my ogramming skills and hrough self-study and the material available.
+			cite.author Stephanie Magion
+
+
+
+
+
+
+
+
+
+.reviews#reviews
+	+reviews_entry( { foto: src.img+'reviews/01.jpg' } )
+	+reviews_entry( { foto: src.img+'reviews/02.jpg' } )
+	+reviews_entry( { foto: src.img+'reviews/03.jpg' } )
+	+reviews_entry( { foto: src.img+'reviews/default.jpg' } )

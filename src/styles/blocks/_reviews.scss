@@ -1,0 +1,45 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.reviews {
+
+
+	.entry {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+
+	&__entry {
+		blockquote {
+			text-align: left;
+		}
+		.foto {
+			width: 5em;
+			height: 5em;
+			overflow: hidden;
+			border-radius: 50%;
+			margin: 1em;
+			flex-shrink: 0;
+		}
+	}
+
+
+}

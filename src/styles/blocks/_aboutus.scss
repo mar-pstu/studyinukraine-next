@@ -12,4 +12,7 @@
 	.permalink {
 		margin-top: 1.5em;
 	}
+	&:nth-of-type( even ) .row {
+		@extend .reverse;
+	}
 }

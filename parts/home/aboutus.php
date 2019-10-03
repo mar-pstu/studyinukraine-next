@@ -12,7 +12,7 @@ if ( ! empty( $sections ) ) {
 	foreach ( $sections as $section ) {
 		$page_id = studyinukraine_next\get_translate_id( $section[ 'page_id' ], 'page' );
 		if ( ! empty( $page_id ) ) {
-			$direction_class = ( isset( $section[ 'reversing' ] ) && $section[ 'reversing' ] ) ? 'reversing' : '';
+			$direction_class = ( isset( $section[ 'reverse' ] ) && $section[ 'reverse' ] ) ? 'reverse' : '';
 			$thumbnail_src = false;
 			$thumbnail_alt = '';
 			$title = get_the_title( $page_id );

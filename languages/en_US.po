@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2019-09-17 11:45+0300\n"
-"PO-Revision-Date: 2019-09-17 11:49+0300\n"
+"POT-Creation-Date: 2019-10-03 16:27+0300\n"
+"PO-Revision-Date: 2019-10-03 16:27+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -40,7 +40,8 @@ msgstr "404"
 msgid "Настройки страницы 404"
 msgstr "Page Settings 404"
 
-#: customizer/404.php:34 customizer/jumbotron.php:70 customizer/sectors.php:50
+#: customizer/404.php:34 customizer/jumbotron.php:70
+#: customizer/questions.php:53 customizer/sectors.php:50
 msgid "Заголовок"
 msgstr "Headline"
 
@@ -57,16 +58,18 @@ msgid "О нас"
 msgstr "About us"
 
 #: customizer/aboutus.php:15 customizer/jumbotron.php:15
-#: customizer/sectors.php:15 customizer/services.php:15
+#: customizer/sectors.php:15 customizer/services.php:15 customizer/steps.php:15
 msgid "Секция главной страницы"
 msgstr "Homepage Section"
 
 #: customizer/aboutus.php:33 customizer/jumbotron.php:34
-#: customizer/sectors.php:33 customizer/services.php:33
+#: customizer/questions.php:34 customizer/sectors.php:33
+#: customizer/services.php:33 customizer/steps.php:33
 msgid "Использовать секцию"
 msgstr "Use section"
 
 #: customizer/aboutus.php:52 customizer/jumbotron.php:129
+#: customizer/questions.php:110
 msgid "Превью"
 msgstr "Preview"
 
@@ -75,16 +78,21 @@ msgstr "Preview"
 msgid "Выбор страницы"
 msgstr "Page Selection"
 
-#: customizer/aboutus.php:76 customizer/jumbotron.php:100 index.php:28
-#: parts/home/aboutus.php:27 parts/home/jumbotron.php:8
+#: customizer/aboutus.php:76 customizer/jumbotron.php:100
+#: customizer/steps.php:167 index.php:28 parts/home/aboutus.php:31
+#: parts/home/jumbotron.php:8 views/home/steps.php:17
 msgid "Подробней"
 msgstr "More details"
 
-#: customizer/aboutus.php:84 customizer/jumbotron.php:109
+#: customizer/aboutus.php:85 customizer/jumbotron.php:109
 msgid "Текст кнопки"
 msgstr "Button text"
 
-#: customizer/aboutus.php:99
+#: customizer/aboutus.php:101 customizer/jumbotron.php:89
+msgid "Описание"
+msgstr "Description"
+
+#: customizer/aboutus.php:116
 msgid "Обратный порядок"
 msgstr "Reverse order"
 
@@ -124,10 +132,6 @@ msgstr "Email"
 msgid "Первый экран"
 msgstr "First screen"
 
-#: customizer/jumbotron.php:89
-msgid "Описание"
-msgstr "Description"
-
 #: customizer/jumbotron.php:141 parts/home/jumbotron.php:48
 msgid "Подать заявку на поступление"
 msgstr "Apply for admission"
@@ -136,17 +140,29 @@ msgstr "Apply for admission"
 msgid "Заголовок формы"
 msgstr "Form header"
 
-#: customizer/jumbotron.php:170
+#: customizer/jumbotron.php:170 customizer/questions.php:72
 msgid "Шорткод формы"
 msgstr "Shortcode Forms"
 
-#: customizer/jumbotron.php:190
+#: customizer/jumbotron.php:190 customizer/questions.php:91
 msgid "Email админа (если используется форма темы)"
 msgstr "Admin Email (if using the subject form)"
 
 #: customizer/jumbotron.php:209
 msgid "Публиковать отзывы"
 msgstr "Post reviews"
+
+#: customizer/questions.php:13
+msgid "Есть вопросы?"
+msgstr "Have questions?"
+
+#: customizer/questions.php:15
+msgid "Контактная форма подвала страницы"
+msgstr "Footer Contact Form"
+
+#: customizer/questions.php:44 parts/home/questions.php:8
+msgid "Остались вопросы? Позвоните нам!"
+msgstr "Still have questions? Call us!"
 
 #: customizer/reviews.php:13
 msgid "Отзывы"
@@ -156,16 +172,20 @@ msgstr "Reviews"
 msgid "Блок отзывов клиентов"
 msgstr "Customer Feedback Block"
 
-#: customizer/reviews.php:33
+#: customizer/reviews.php:34
 msgid "Автор"
 msgstr "Author"
 
-#: customizer/reviews.php:48
+#: customizer/reviews.php:50
 msgid "Отзыв"
 msgstr "Review"
 
+#: customizer/reviews.php:67
+msgid "Фото"
+msgstr "Photo"
+
 #: customizer/sectors.php:13 customizer/sectors.php:42
-#: parts/home/sectors.php:26
+#: parts/home/sectors.php:19
 msgid "Области знаний"
 msgstr "Areas of knowledge"
 
@@ -173,53 +193,111 @@ msgstr "Areas of knowledge"
 msgid "Услуги"
 msgstr "Services"
 
-#: functions.php:46
+#: customizer/steps.php:13
+msgid "Шаги"
+msgstr "Steps"
+
+#: customizer/steps.php:42 parts/home/steps.php:12
+msgid "Шаги к поступлению"
+msgstr "Steps to entry"
+
+#: customizer/steps.php:51
+msgid "Заголовок секции"
+msgstr "Steps to entry"
+
+#: customizer/steps.php:60 parts/home/steps.php:13
+msgid "Узнать всё о процедуре поступления"
+msgstr "Learn all about the admission procedure"
+
+#: customizer/steps.php:69
+msgid "Подпись кнопки с описанием"
+msgstr "Button Description"
+
+#: customizer/steps.php:87
+msgid "Выбор страницы с описанием секции"
+msgstr "Selecting a section description page"
+
+#: customizer/steps.php:104
+msgid "Количество шагов"
+msgstr "Number of steps"
+
+#: customizer/steps.php:128
+msgid "Заголовок шага"
+msgstr "Step header"
+
+#: customizer/steps.php:144
+msgid "Описание шага"
+msgstr "Step description"
+
+#: customizer/steps.php:160
+msgid "Выбор страницы с описанием шага"
+msgstr "Select page with step description"
+
+#: customizer/steps.php:176
+msgid "Подпись кнопки"
+msgstr "Button Signature"
+
+#: customizer/steps.php:193
+msgid "Лого шага"
+msgstr "Step logo"
+
+#: functions.php:57
 msgid "Настройки темы \"StudyInUkraine\""
 msgstr "StudyInUkraine Theme Settings"
 
-#: functions.php:88
+#: functions.php:101
 msgid "Главное меню"
 msgstr "Main menu"
 
-#: functions.php:89
+#: functions.php:102
 msgid "Меню страницы 404"
 msgstr "Page Menu 404"
 
-#: functions.php:101
+#: functions.php:114
 msgid "Правая колонка"
 msgstr "Right column"
 
-#: functions.php:111
+#: functions.php:124
 msgid "Сайдбар меню навигации"
 msgstr "Sidebar navigation menu"
 
-#: header.php:45
+#: header.php:14
+msgid "Меню"
+msgstr "Menu"
+
+#: header.php:49 header.php:54
 msgid "Открыть меню"
 msgstr "Open menu"
 
-#: includes/feedback-form-ajax.php:54 includes/feedback-form-ajax.php:67
+#: includes/feedback-form-ajax.php:52 includes/feedback-form-ajax.php:65
+#: includes/questions-form-ajax.php:57
 msgid "Неверный email"
 msgstr "Invalid Email"
 
-#: includes/feedback-form-ajax.php:58
+#: includes/feedback-form-ajax.php:56 includes/questions-form-ajax.php:61
 msgid "Заявка отправлена"
 msgstr "Application sent"
 
-#: includes/feedback-form-ajax.php:60 views/feedback-form.php:19
+#: includes/feedback-form-ajax.php:58 includes/questions-form-ajax.php:63
+#: views/feedback-form.php:21 views/questions-form.php:21
 msgid "Попробуйте позже или обратитесь к администратору."
 msgstr "Try again later or contact your administrator."
 
-#: includes/feedback-form-ajax.php:63
+#: includes/feedback-form-ajax.php:61 includes/questions-form-ajax.php:66
 msgid "Вы забанены, обратитесь к администратору"
 msgstr "You are banned, contact your administrator"
 
-#: includes/feedback-form-ajax.php:91
+#: includes/feedback-form-ajax.php:89 includes/questions-form-ajax.php:126
 msgid "Сообщение с сайта"
 msgstr "Message from the site"
 
 #: includes/metabox-bgi.php:42
 msgid "Фоновое изображение"
 msgstr "Background image"
+
+#: includes/questions-form-ajax.php:70
+msgid "Заполните поля формы"
+msgstr "Fill in the form fields"
 
 #: includes/template-functions.php:94
 msgid "Смотреть предыдущий пост"
@@ -229,11 +307,11 @@ msgstr "View previous post"
 msgid "Смотреть следующий пост"
 msgstr "See next post"
 
-#: includes/template-functions.php:161
+#: includes/template-functions.php:178
 msgid "Главная"
 msgstr "Home"
 
-#: includes/template-functions.php:174
+#: includes/template-functions.php:191
 msgid "Домашняя страница"
 msgstr "Homepage"
 
@@ -241,21 +319,25 @@ msgstr "Homepage"
 msgid "Найти"
 msgstr "To find"
 
-#: views/feedback-form-message.php:4
+#: views/feedback-form-message.php:4 views/questions-form-message.php:4
 msgid "IP пользователя"
 msgstr "User IP"
 
-#: views/feedback-form-message.php:8
+#: views/feedback-form-message.php:8 views/questions-form-message.php:12
 msgid "Email пользователя"
 msgstr "User Email"
 
-#: views/feedback-form.php:3
+#: views/feedback-form.php:3 views/questions-form.php:4
 msgid "Ваш email"
 msgstr "Your email"
 
-#: views/feedback-form.php:4
+#: views/feedback-form.php:5 views/questions-form.php:6
 msgid "Отправить"
 msgstr "Submit"
+
+#: views/home/steps.php:22
+msgid "Визуализация шага"
+msgstr "Step visualization"
 
 #: views/metabox-bgi.php:5
 msgid "Удалить"
@@ -264,3 +346,15 @@ msgstr "Delete"
 #: views/metabox-bgi.php:8
 msgid "Установить"
 msgstr "Install"
+
+#: views/questions-form-message.php:8
+msgid "Имя пользователя"
+msgstr "Username"
+
+#: views/questions-form-message.php:16 views/questions-form.php:5
+msgid "Сообщение"
+msgstr "Message"
+
+#: views/questions-form.php:3
+msgid "Ваше имя"
+msgstr "Your name"

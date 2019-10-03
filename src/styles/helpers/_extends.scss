@@ -45,3 +45,37 @@
 	border: none;
 	font-size: 85%;
 }
+
+
+
+
+%box {
+	border-radius: 8px;
+	padding: 2em;
+	position: relative;
+	@include min-width( $screen-sm ) {
+		padding: 3em;
+	}
+	&:after,
+	&:before {
+		content: '';
+		display: block;
+		border-radius: 8px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		z-index: -1;
+	}
+
+	&:after {
+		background-color: $brand-success;
+		top: 0px;
+		bottom: 0px;
+	}
+
+	&:before {
+		background-color: darken( $brand-primary, 35% );
+		top: -10px;
+		bottom: 10px;
+	}
+}

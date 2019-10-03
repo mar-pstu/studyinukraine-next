@@ -1,7 +1,9 @@
 <form class="form" id="feedback_form">
   <input type="text" style="display: none;" value="" name="ulogin">
   <input type="email" placeholder="<?php esc_attr_e( 'Ваш email', STUDYINUKRAINE_NEXT_TEXTDOMAIN ); ?>" name="email" required>
-  <button type="submit"><span class="sr-only"><?php _e( 'Отправить', STUDYINUKRAINE_NEXT_TEXTDOMAIN ); ?></span></button>
+  <button type="submit">
+    <span class="sr-only"><?php _e( 'Отправить', STUDYINUKRAINE_NEXT_TEXTDOMAIN ); ?></span>
+  </button>
 </form>
 <script>
   ( function ( $ ) {

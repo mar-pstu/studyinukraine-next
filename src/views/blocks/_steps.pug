@@ -1,0 +1,27 @@
+//-
+	Главная страница
+	Шаги к поступлению
+
+
+
+
+mixin steps_entry( args )
+	.steps__entry.entry( role="listitem" ): .container
+		.row.middle-xs.center-xs
+			.col-xs-12.col-sm-6.col-md-5.col-lg-5.first-sm
+				.count
+				h3.title #{args.title}
+				p #{args.excerpt}
+				a.btn.btn-success.btn-sm( href="#" ) Текст
+			.col-xs-12.col-sm-6.col-md-5.col-lg-5.first-xs
+				img.thumbnail.lazy( src="#", data-src=args.thumbnail, alt=args.title )
+
+
+
+
+section.section.steps#steps( role="list" )
+	h2.text-center Road map to education
+	+steps_entry( { title: 'Первый шаг', thumbnail: src.img+'steps/email.png', excerpt: 'Напишите нам, мы с вами обязательно свяжемся' } )
+	+steps_entry( { title: 'Второй шаг', thumbnail: src.img+'steps/checklist.png', excerpt: 'Подготовьте необходимые документы и визу' } )
+	+steps_entry( { title: 'Третий шаг', thumbnail: src.img+'steps/suitcase.png', excerpt: 'Приезжайте учиться!' } )
+	.container.text-center: a.permalink( href="#" ) Узнать всё о процедуре поступления
