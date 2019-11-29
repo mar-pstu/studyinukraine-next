@@ -1,6 +1,9 @@
 <?php
 
 
+if ( ! defined( 'ABSPATH' ) ) { exit; };
+
+
 get_header();
 
 
@@ -16,31 +19,31 @@ if ( function_exists( 'pll__' ) ) {
 ?>
 
 
-<div class="container">
-  <div class="row center-xs middle-xs">
-    <div class="col-xs-12 col-sm-9 col-md-8 col-lg-6">
-      <div class="error404__wrap wrap"><img class="logo lazy center-block" src="#" data-src="<?php echo $thumbnail_src; ?>" alt="<?php echo  esc_attr( $title ); ?>">
-        <h1 class="title"><?php echo $title; ?></h1>
-        <?php
-          if ( has_nav_menu( 'menu_404' ) ) {
-            wp_nav_menu( array(
-              'theme_location'  => 'menu_404',
-              'menu'            => 'menu_404',
-              'container'       => false,
-              'menu_class'      => 'shortcuts',
-              'echo'            => true,
-              'depth'           => 1,
-            ) );
-          }
-          echo $excerpt;
-        ?>
-        <div class="text-center">
-          <a class="btn btn-success home-link" href="<?php echo home_url( '/' ) ?>">
-            <?php _e( 'Вернуться на главную', STUDYINUKRAINE_NEXT_TEXTDOMAIN ); ?>
-          </a>
-        </div>
+
+<div class="row center-xs middle-xs">
+  <div class="col-xs-12 col-sm-9 col-md-8 col-lg-6">
+    <div class="error404__wrap wrap"><img class="logo lazy center-block" src="#" data-src="<?php echo $thumbnail_src; ?>" alt="<?php echo  esc_attr( $title ); ?>">
+      <h1 class="title"><?php echo $title; ?></h1>
+      <?php
+        if ( has_nav_menu( 'menu_404' ) ) {
+          wp_nav_menu( array(
+            'theme_location'  => 'menu_404',
+            'menu'            => 'menu_404',
+            'container'       => false,
+            'menu_class'      => 'shortcuts',
+            'echo'            => true,
+            'depth'           => 1,
+          ) );
+        }
+        echo $excerpt;
+      ?>
+      <div class="text-center">
+        <a class="btn btn-success home-link" href="<?php echo home_url( '/' ) ?>">
+          <?php _e( 'Вернуться на главную', STUDYINUKRAINE_NEXT_TEXTDOMAIN ); ?>
+        </a>
       </div>
     </div>
   </div>
 </div>
-<?php get_footer(); ?>
+
+<?php get_footer();

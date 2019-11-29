@@ -1,3 +1,4 @@
+<?php if ( ! defined( 'ABSPATH' ) ) { exit; }; ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
   <head>
@@ -37,10 +38,8 @@
               <div class="bloginfo">
                 <?php the_custom_logo(); ?>
                 <?php if ( is_multisite() ) : ?>
-                  <?php switch_to_blog( get_main_site_id() ); ?>
-                  <a class="network" href="<?php echo home_url( '/' ); ?>"><?php bloginfo( 'description' ); ?></a>
+                  <a class="network" href="<?php echo home_url( '/' ); ?>"><?php echo get_blog_details( get_main_site_id() )->blogname; ?></a>
                   <span class="separator"></span>
-                  <?php restore_current_blog(); ?>
                 <?php endif; ?>
                 <a class="name" href="<?php echo home_url( '/' ); ?>"><?php bloginfo( 'name' ); ?></a>
               </div>  
@@ -59,8 +58,12 @@
       </header>
       <main class="wrapper__item wrapper__item--main main" id="main">
         <?php
-          if ( ! wp_is_mobile() && is_singular( array( 'page', 'post' ) ) )
-            if ( $main_bgi_id = get_post_meta( get_the_ID(), 'pstu_bgi', true ) )
+          if ( ! wp_is_mobile() && is_singular( array( 'page', 'post' ) ) ) {
+            if ( $main_bgi_id = get_post_meta( get_the_ID(), 'pstu_bgi', true ) ) {
               if ( $main_bgi_src = wp_get_attachment_image_url( $main_bgi_id, 'medium' ) ) {
                 echo '<div class="main-bgi lazy" data-src="' . $main_bgi_src . '"></div>';
               }
+            }
+          }
+        ?>
+        <div class="container">

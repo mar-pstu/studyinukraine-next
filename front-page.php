@@ -5,6 +5,8 @@
 get_header();
 
 
+echo "</div>"; // закрытие .container
+
 
 foreach ( array(
     'jumbotron',
@@ -18,8 +20,8 @@ foreach ( array(
         get_template_part( "parts/home/$key" );
 }
 
+
+echo "<div class=\"container\">";
+
+
 get_footer();
-
-
-
-?>

@@ -7,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; };
 define( 'STUDYINUKRAINE_NEXT_URL', get_template_directory_uri() . '/' );
 define( 'STUDYINUKRAINE_NEXT_DIR', get_template_directory() . '/' );
 define( 'STUDYINUKRAINE_NEXT_TEXTDOMAIN', 'studyinukraine-next' );
-define( 'STUDYINUKRAINE_NEXT_VERSION', '1.0.2' );
+define( 'STUDYINUKRAINE_NEXT_VERSION', '1.0.5' );
 define( 'STUDYINUKRAINE_NEXT_SLUG', 'studyinukraine_next' );
 
 
