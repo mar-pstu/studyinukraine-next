@@ -15,14 +15,24 @@
 .burger {
 
     margin: 0 auto;
-    width: 30px;
-    height: 30px;
-    position: relative;
     border: none;
     background-color: transparent;
     padding: 0;
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
     z-index: 1111;
+
+    .label {
+    	margin-right: .5em;
+    	font-size: 1em;
+    }
+
+    .overlay {
+    	width: 30px;
+	    height: 30px;
+	    position: relative;
+    }
 
 	.bar {
 		padding: 0;

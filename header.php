@@ -46,11 +46,13 @@
             </div>
             <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-right">
               <button class="burger" id="burger" title="<?php esc_attr_e( 'Открыть меню', STUDYINUKRAINE_NEXT_TEXTDOMAIN ); ?>">
-                <span class="bar bar1"></span>
-                <span class="bar bar2"></span>
-                <span class="bar bar3"></span>
-                <span class="bar bar4"></span>
-                <span class="sr-only"><?php _e( 'Открыть меню', STUDYINUKRAINE_NEXT_TEXTDOMAIN ); ?></span>
+                <span class="label"><?php _e( 'Меню', STUDYINUKRAINE_NEXT_TEXTDOMAIN ); ?></span>
+                <span class="overlay">
+                  <span class="bar bar1"></span>
+                  <span class="bar bar2"></span>
+                  <span class="bar bar3"></span>
+                  <span class="bar bar4"></span>
+                </span>
               </button>
             </div>
           </div>

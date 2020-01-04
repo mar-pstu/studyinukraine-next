@@ -18,8 +18,8 @@ foreach ( array(
     "jumbotron_feedback_form",
     "sectors_title",
     "questions_title",
-    "_steps_title",
-    "_steps_labe",
+    "steps_title",
+    "steps_labe",
 ) as $key ) {
     $value = wp_strip_all_tags( get_theme_mod( STUDYINUKRAINE_NEXT_SLUG . '_' . $key, '' ) );
     if ( ! empty( $value ) ) {
