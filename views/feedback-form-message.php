@@ -1,6 +1,10 @@
 <table cellspacing="0" style="border: 1px solid #bbbbbb; width: 100%;">
 	<tbody>
 		<tr>
+			<td style="border: 1px solid #bbbbbb; padding: 2px 5px;"><?php _e( 'Текущий язык', $this->textdomain ); ?></td>
+			<td style="border: 1px solid #bbbbbb; padding: 2px 5px; width: 30%;"><?php echo $current_lang; ?></td>
+		</tr>
+		<tr>
 			<td style="border: 1px solid #bbbbbb; padding: 2px 5px;"><?php _e( 'IP пользователя', $this->textdomain ); ?></td>
 			<td style="border: 1px solid #bbbbbb; padding: 2px 5px; width: 30%;"><?php echo $user_ip; ?></td>
 		</tr>

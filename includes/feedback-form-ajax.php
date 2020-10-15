@@ -102,6 +102,7 @@ class StudyInUkraineFeedbackFormAjaxClass {
 	private function render_message( $email ) {
 		$result = __return_empty_string();
 		$user_ip = $this->get_the_user_ip();
+		$current_lang = determine_locale();
 		ob_start();
 		include get_theme_file_path( 'views/feedback-form-message.php' );
 		$result = ob_get_contents();
