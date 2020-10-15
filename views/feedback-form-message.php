@@ -1,3 +1,4 @@
+<h2><?php _e( 'Форма "Заказать обратный звонок"', $this->textdomain ); ?></h2>
 <table cellspacing="0" style="border: 1px solid #bbbbbb; width: 100%;">
 	<tbody>
 		<tr>
